@@ -1,0 +1,42 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/img"
+public_folder: "/assets/img"
+
+collections:
+  - name: "productos"
+    label: "Productos Físicos"
+    folder: "content/productos"
+    create: true
+    fields:
+      - { label: "Nombre", name: "nombre", widget: "string" }
+      - { label: "Descripción", name: "descripcion", widget: "text" }
+      - { label: "Imagen", name: "imagen", widget: "image" }
+      - { label: "Link de afiliado", name: "link", widget: "string" }
+
+  - name: "digitales"
+    label: "Productos Digitales"
+    folder: "content/digitales"
+    create: true
+    fields:
+      - { label: "Nombre", name: "nombre", widget: "string" }
+      - { label: "Descripción", name: "descripcion", widget: "text" }
+      - { label: "Link de descarga", name: "link", widget: "string" }
+
+  - name: "redes-sociales"
+    label: "Redes Sociales"
+    folder: "content/redes-sociales"
+    create: true
+    fields:
+      - { label: "Nombre", name: "nombre", widget: "string" }
+      - { label: "URL", name: "url", widget: "string" }
+
+  - name: "hotmart"
+    label: "Hotmart Exclusivo"
+    folder: "content/hotmart"
+    create: true
+    fields:
+      - { label: "Nombre", name: "nombre", widget: "string" }
+      - { label: "Link Privado", name: "link", widget: "string" }
